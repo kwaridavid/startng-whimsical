@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>start.ng — Good vibes. Good games.</title>
+  <meta name="description" content="A whimsical concept redesign of start.ng — Nigeria's home for browser games. Play free community games, join the daily tournament, and ship your own game." />
+  <meta name="theme-color" content="#FFFDF6" />
+  <meta property="og:title" content="start.ng — Good vibes. Good games." />
+  <meta property="og:description" content="Free browser games from Nigeria and across Africa. Pick a card, play instantly, no downloads." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="ticker" aria-label="Latest from start.ng">
+    <div class="ticker__track">
+      <div class="ticker__group">
+        <span>188 games live</span><span class="ticker__star">✦</span>
+        <span>Made in Naija</span><span class="ticker__star">✦</span>
+        <span>No downloads, ever</span><span class="ticker__star">✦</span>
+        <span>New drop: Danfo Rush Hour</span><span class="ticker__star">✦</span>
+        <span>Free to play, free to publish</span><span class="ticker__star">✦</span>
+      </div>
+      <div class="ticker__group" aria-hidden="true">
+        <span>188 games live</span><span class="ticker__star">✦</span>
+        <span>Made in Naija</span><span class="ticker__star">✦</span>
+        <span>No downloads, ever</span><span class="ticker__star">✦</span>
+        <span>New drop: Danfo Rush Hour</span><span class="ticker__star">✦</span>
+        <span>Free to play, free to publish</span><span class="ticker__star">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="start.ng home">
+        <svg class="brand__star" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 4.5l5.6 13.2 14.2.9-10.9 9.2 3.5 13.8L24 33.5 11.6 41.6l3.5-13.8L4.2 18.6l14.2-.9z" fill="#2BC25A" stroke="#2BC25A" stroke-width="7" stroke-linejoin="round"/>
+          <circle cx="19.5" cy="21.5" r="1.9" fill="#123122"/>
+          <circle cx="29" cy="21.5" r="1.9" fill="#123122"/>
+          <path d="M20 26.5q4 3 8 0" fill="none" stroke="#123122" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__word">start<span>.ng</span></span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <a href="#games">Games</a>
+        <a href="#tournament">Tournament</a>
+        <a href="#creators">Creators</a>
+        <a href="#build">Docs</a>
+        <a class="nav-play" href="#games">Play now <span aria-hidden="true">▶</span></a>
+      </nav>
+
+      <div class="nav-side">
+        <button class="chip chip--streak" type="button" data-toast="7-day streak! Keep it rolling 🔥" aria-label="Your streak: 7 days">
+          <span aria-hidden="true">🔥</span><strong>7</strong>
+        </button>
+        <button class="chip chip--gems" type="button" data-toast="240 gems. Spend them on absolutely nothing — they're just nice." aria-label="Your gems: 240">
+          <span aria-hidden="true">💎</span><strong>240</strong>
+        </button>
+        <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="true" aria-label="Mute sound">
+          <span class="sound-on" aria-hidden="true">🔊</span>
+          <span class="sound-off" aria-hidden="true">🔇</span>
+        </button>
+        <a class="btn btn--primary btn--sm nav-cta" href="#games">Play now</a>
+        <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="flag-token flag-token--mini flag--ng" aria-hidden="true"></span> Nigeria's home for browser games</p>
+          <h1>Good vibes.<br /><span class="hl">Good games.</span></h1>
+          <p class="hero__lede">Games made by builders in the community. Every one lives at its own start.ng address — pick a card and play right in your browser. No downloads, no wahala.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#games"><span aria-hidden="true">▶</span> Play now</a>
+            <a class="btn btn--paper" href="#build">Put your game here</a>
+          </div>
+          <ul class="trust">
+            <li><span class="tick" aria-hidden="true">✓</span> 188 games</li>
+            <li><span class="tick" aria-hidden="true">✓</span> 100% free</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Instant play</li>
+          </ul>
+          <div class="proof">
+            <div class="avatars" aria-hidden="true">
+              <span class="avatar avatar--a">TA</span>
+              <span class="avatar avatar--b">CO</span>
+              <span class="avatar avatar--c">IS</span>
+              <span class="avatar avatar--d">+</span>
+            </div>
+            <p><strong>12,000+ players</strong> this week <span aria-hidden="true">🎮</span></p>
+          </div>
+        </div>
+
+        <div class="hero-stage">
+          <svg class="stage-blob" viewBox="0 0 480 480" aria-hidden="true">
+            <path d="M399 90c44 48 63 119 45 183-19 65-76 123-143 139-68 16-146-10-185-62C76 298 77 221 103 160 129 98 181 52 244 41c63-11 111 1 155 49Z" fill="#E9FAE1"/>
+            <path d="M391 120c34 42 46 101 31 154-16 54-64 101-119 113-56 12-119-11-150-55-31-44-30-110-8-160 22-51 66-88 119-96 52-8 93 2 127 44Z" fill="none" stroke="#C9F45B" stroke-width="3" stroke-dasharray="10 12"/>
+          </svg>
+          <div class="stage-dots" aria-hidden="true"></div>
+
+          <div class="bubble bubble--streak" aria-hidden="true">
+            <span>🔥</span> 7-day streak!
+          </div>
+          <div class="bubble bubble--hello" aria-hidden="true">
+            Oya, let's play!
+          </div>
+
+          <div class="mascot-wrap">
+            <svg class="tara" viewBox="0 0 240 250" role="img" aria-label="Tara, the start.ng star mascot">
+              <ellipse cx="120" cy="238" rx="60" ry="9" fill="#123122" opacity=".12"/>
+              <g stroke-linecap="round">
+                <path d="M104 190 100 222" stroke="#178C43" stroke-width="10"/>
+                <path d="M136 190 142 222" stroke="#178C43" stroke-width="10"/>
+                <ellipse cx="98" cy="226" rx="15" ry="8.5" fill="#FFC93C" stroke="#123122" stroke-width="4"/>
+                <ellipse cx="144" cy="226" rx="15" ry="8.5" fill="#FFC93C" stroke="#123122" stroke-width="4"/>
+                <path d="M50 116 22 98" stroke="#178C43" stroke-width="10"/>
+                <path d="M190 116 218 98" stroke="#178C43" stroke-width="10"/>
+                <circle cx="19" cy="96" r="8" fill="#2BC25A"/>
+                <circle cx="221" cy="96" r="8" fill="#2BC25A"/>
+              </g>
+              <path d="M120 27.5 146.5 83.6 207.5 89.7 161.8 132.1 174.2 192.6 120 161.8 65.8 192.6 78.2 132.1 32.5 89.7 93.5 83.6Z" fill="#178C43" stroke="#178C43" stroke-width="26" stroke-linejoin="round" transform="translate(0 8)"/>
+              <path d="M120 27.5 146.5 83.6 207.5 89.7 161.8 132.1 174.2 192.6 120 161.8 65.8 192.6 78.2 132.1 32.5 89.7 93.5 83.6Z" fill="#2BC25A" stroke="#2BC25A" stroke-width="26" stroke-linejoin="round"/>
+              <ellipse cx="85" cy="126" rx="9" ry="5" fill="#FF9EC4" opacity=".85"/>
+              <ellipse cx="155" cy="126" rx="9" ry="5" fill="#FF9EC4" opacity=".85"/>
+              <g class="eye" transform-origin="100 112">
+                <circle cx="100" cy="112" r="8.5" fill="#123122"/>
+                <circle cx="97.3" cy="109.2" r="2.7" fill="#fff"/>
+              </g>
+              <g class="eye" transform-origin="140 112">
+                <circle cx="140" cy="112" r="8.5" fill="#123122"/>
+                <circle cx="137.3" cy="109.2" r="2.7" fill="#fff"/>
+              </g>
+              <path d="M104 131q16 14 32 0" fill="none" stroke="#123122" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+          </div>
+
+          <div class="float-card float-card--game" aria-hidden="true">
+            <span class="float-card__cover">🚌</span>
+            <span class="float-card__text"><strong>Danfo Rush Hour</strong><small>12.4k plays</small></span>
+          </div>
+
+          <div class="float-card float-card--rank" aria-hidden="true">
+            <span class="float-card__emoji">🏆</span>
+            <span class="float-card__text"><strong>#12</strong><small>today</small></span>
+          </div>
+
+          <div class="sticker" aria-hidden="true">
+            <span>100%</span><strong>FREE</strong><small>no download</small>
+          </div>
+
+          <svg class="spark spark--1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          <svg class="spark spark--2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          <svg class="spark spark--3" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="ribbon" aria-hidden="true">
+      <div class="ribbon__track">
+        <span>Danfo Rush Hour</span><i>✦</i><span>Jollof Catch</span><i>✦</i><span>Suya Stack</span><i>✦</i><span>Lagos Market</span><i>✦</i><span>Okada Run</span><i>✦</i><span>Ayo Classic</span><i>✦</i><span>Nollywood Escape</span><i>✦</i><span>Afrobeats Rhythm</span><i>✦</i>
+        <span>Danfo Rush Hour</span><i>✦</i><span>Jollof Catch</span><i>✦</i><span>Suya Stack</span><i>✦</i><span>Lagos Market</span><i>✦</i><span>Okada Run</span><i>✦</i><span>Ayo Classic</span><i>✦</i><span>Nollywood Escape</span><i>✦</i><span>Afrobeats Rhythm</span><i>✦</i>
+      </div>
+    </div>
+
+    <section class="section" id="games">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker kicker--green">The arcade</p>
+            <h2>Games from the community</h2>
+            <p class="lede">Hand-picked chaos from Lagos, Accra, Nairobi and everywhere in between. New drops every week.</p>
+          </div>
+          <a class="btn btn--paper btn--sm see-all" href="#games">See all 188 games <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="chips reveal" role="group" aria-label="Filter games by category">
+          <button class="chip-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip-filter" type="button" data-filter="arcade" aria-pressed="false">Arcade</button>
+          <button class="chip-filter" type="button" data-filter="puzzle" aria-pressed="false">Puzzle</button>
+          <button class="chip-filter" type="button" data-filter="action" aria-pressed="false">Action</button>
+          <button class="chip-filter" type="button" data-filter="strategy" aria-pressed="false">Strategy</button>
+          <button class="chip-filter" type="button" data-filter="naija" aria-pressed="false">Naija classics</button>
+          <button class="chip-filter" type="button" data-filter="music" aria-pressed="false">Music</button>
+        </div>
+
+        <div class="game-grid" id="game-grid">
+          <a class="game-card reveal" href="#games" data-game="danfo" data-title="Danfo Rush Hour" data-cat="arcade">
+            <div class="cover" data-theme="danfo">
+              <span class="cover-emoji" aria-hidden="true">🚌</span>
+              <span class="cover-extra" aria-hidden="true">🚦</span>
+              <span class="badge badge--hot">🔥 Trending</span>
+            </div>
+            <div class="card-body">
+              <h3>Danfo Rush Hour</h3>
+              <p class="by">by Tunde A. · Lagos</p>
+              <div class="meta"><span>⭐ 4.8</span><span>▶ 12.4k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#play" data-game="jollof" data-title="Jollof Catch" data-cat="arcade">
+            <div class="cover" data-theme="jollof">
+              <span class="cover-emoji" aria-hidden="true">🍚</span>
+              <span class="cover-extra" aria-hidden="true">🌶️</span>
+              <span class="badge badge--demo">▶ Playable demo</span>
+            </div>
+            <div class="card-body">
+              <h3>Jollof Catch</h3>
+              <p class="by">by Chiamaka O. · Enugu</p>
+              <div class="meta"><span>⭐ 4.9</span><span>▶ 9.1k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#games" data-game="suya" data-title="Suya Stack" data-cat="puzzle">
+            <div class="cover" data-theme="suya">
+              <span class="cover-emoji" aria-hidden="true">🍢</span>
+              <span class="cover-extra" aria-hidden="true">🔥</span>
+              <span class="badge">🧩 Puzzle</span>
+            </div>
+            <div class="card-body">
+              <h3>Suya Stack</h3>
+              <p class="by">by Ibrahim S. · Kano</p>
+              <div class="meta"><span>⭐ 4.7</span><span>▶ 7.2k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#games" data-game="market" data-title="Lagos Market Tycoon" data-cat="strategy">
+            <div class="cover" data-theme="market">
+              <span class="cover-emoji" aria-hidden="true">🧺</span>
+              <span class="cover-extra" aria-hidden="true">🛍️</span>
+              <span class="badge badge--new">✨ New</span>
+            </div>
+            <div class="card-body">
+              <h3>Lagos Market Tycoon</h3>
+              <p class="by">by Funke B. · Ibadan</p>
+              <div class="meta"><span>⭐ 4.6</span><span>▶ 6.8k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#games" data-game="okada" data-title="Okada Run" data-cat="action">
+            <div class="cover" data-theme="okada">
+              <span class="cover-emoji" aria-hidden="true">🛵</span>
+              <span class="cover-extra" aria-hidden="true">💨</span>
+              <span class="badge">⚡ Action</span>
+            </div>
+            <div class="card-body">
+              <h3>Okada Run</h3>
+              <p class="by">by Emeka N. · Port Harcourt</p>
+              <div class="meta"><span>⭐ 4.5</span><span>▶ 5.4k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#games" data-game="ayo" data-title="Ayo Classic" data-cat="naija">
+            <div class="cover" data-theme="ayo">
+              <span class="cover-emoji" aria-hidden="true">🫘</span>
+              <span class="cover-extra" aria-hidden="true">⚪</span>
+              <span class="badge">Naija Classic</span>
+            </div>
+            <div class="card-body">
+              <h3>Ayo Classic</h3>
+              <p class="by">by Damilola K. · Abeokuta</p>
+              <div class="meta"><span>⭐ 4.8</span><span>▶ 4.9k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#games" data-game="nollywood" data-title="Nollywood Escape" data-cat="puzzle">
+            <div class="cover" data-theme="nollywood">
+              <span class="cover-emoji" aria-hidden="true">🎬</span>
+              <span class="cover-extra" aria-hidden="true">🔦</span>
+              <span class="badge">🧩 Puzzle</span>
+            </div>
+            <div class="card-body">
+              <h3>Nollywood Escape</h3>
+              <p class="by">by Zainab Y. · Abuja</p>
+              <div class="meta"><span>⭐ 4.4</span><span>▶ 4.1k plays</span></div>
+            </div>
+          </a>
+
+          <a class="game-card reveal" href="#games" data-game="afrobeats" data-title="Afrobeats Rhythm" data-cat="music">
+            <div class="cover" data-theme="afrobeats">
+              <span class="cover-emoji" aria-hidden="true">🎧</span>
+              <span class="cover-extra" aria-hidden="true">🎶</span>
+              <span class="badge">🎵 Music</span>
+            </div>
+            <div class="card-body">
+              <h3>Afrobeats Rhythm</h3>
+              <p class="by">by Kwame M. · Accra</p>
+              <div class="meta"><span>⭐ 4.7</span><span>▶ 3.7k plays</span></div>
+            </div>
+          </a>
+        </div>
+
+        <p class="games-note reveal"><span class="games-note__icon" aria-hidden="true">💡</span><span>Every game is free, instant, and playable in your browser. <strong>Jollof Catch</strong> is the playable demo in this concept — give it a go.</span></p>
+      </div>
+    </section>
+
+    <section class="section" id="tournament">
+      <div class="container">
+        <div class="tournament reveal">
+          <div class="tournament__copy">
+            <p class="kicker kicker--lime"><span class="live-dot" aria-hidden="true"></span> Daily tournament</p>
+            <h2>Today's leaderboard is wide open.</h2>
+            <p>One run a day. Highest score takes the crown and a spot on the wall. Resets at midnight WAT — no entry fee, no pressure, plenty vibes.</p>
+
+            <div class="clock" aria-label="Time until the next tournament reset">
+              <div class="clock__box"><span id="cd-hours">00</span><small>hrs</small></div>
+              <div class="clock__box"><span id="cd-mins">00</span><small>min</small></div>
+              <div class="clock__box"><span id="cd-secs">00</span><small>sec</small></div>
+            </div>
+
+            <div class="tournament__actions">
+              <a class="btn btn--sun" href="#play" data-open-game="jollof">Join today's run <span aria-hidden="true">🔥</span></a>
+              <p class="fine">Free entry · One run per player · Bragging rights included</p>
+            </div>
+          </div>
+
+          <div class="leaderboard">
+            <div class="leaderboard__head">
+              <h3>Today's top 3</h3>
+              <span class="pill live"><span class="live-dot" aria-hidden="true"></span> Live</span>
+            </div>
+            <ol class="lb-list">
+              <li class="lb-row lb-row--gold">
+                <span class="lb-rank lb-rank--1">1</span>
+                <span class="lb-avatar lb-avatar--one">JQ</span>
+                <span class="lb-name">jollofqueen<small>🔥 21 day streak</small></span>
+                <span class="lb-score">2,480<small>XP</small></span>
+              </li>
+              <li class="lb-row">
+                <span class="lb-rank lb-rank--2">2</span>
+                <span class="lb-avatar lb-avatar--two">TR</span>
+                <span class="lb-name">TundeRuns<small>🔥 14 day streak</small></span>
+                <span class="lb-score">2,110<small>XP</small></span>
+              </li>
+              <li class="lb-row">
+                <span class="lb-rank lb-rank--3">3</span>
+                <span class="lb-avatar lb-avatar--three">EO</span>
+                <span class="lb-name">emeka_okada<small>🔥 9 day streak</small></span>
+                <span class="lb-score">1,940<small>XP</small></span>
+              </li>
+            </ol>
+            <button class="lb-you" type="button" data-open-game="jollof">
+              <span class="lb-avatar lb-avatar--you">?</span>
+              <span><strong>Your name here</strong><small>Play a round to enter today's board</small></span>
+              <span class="lb-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="build">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <div>
+            <p class="kicker kicker--sun">Ship it</p>
+            <h2>Got a game? Put it on start.ng.</h2>
+            <p class="lede">Any static browser game works — HTML, JavaScript, three.js, Phaser. Players bring their start.ng character, scores and friends.</p>
+          </div>
+        </div>
+
+        <div class="steps">
+          <article class="step reveal">
+            <div class="step__card">
+              <span class="step__emoji" aria-hidden="true">🛠️</span>
+              <h3>Build it</h3>
+              <p>Make something small and fun. Any static browser game goes — no backend needed, no framework required.</p>
+            </div>
+            <div class="step__node" aria-hidden="true">1</div>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__card">
+              <span class="step__emoji" aria-hidden="true">🐙</span>
+              <h3>Push it to GitHub</h3>
+              <p>A public repo with a ready-to-play <code>index.html</code> at the top or in <code>dist/</code>, plus a <code>cover.png</code> for its card.</p>
+            </div>
+            <div class="step__node" aria-hidden="true">2</div>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__card">
+              <span class="step__emoji" aria-hidden="true">🚀</span>
+              <h3>Publish it</h3>
+              <p>One API call with your repo link, no key needed. Or hand your AI the docs and let it do the lot.</p>
+              <code class="code-chip">POST /api/publish</code>
+            </div>
+            <div class="step__node" aria-hidden="true">3</div>
+          </article>
+
+          <article class="step reveal">
+            <div class="step__card">
+              <span class="step__emoji" aria-hidden="true">✅</span>
+              <h3>Approve it once</h3>
+              <p>Open the link you get back and it's live at <strong>yourgame.start.ng</strong>, with its own leaderboard if you want one. After that, every push updates it.</p>
+            </div>
+            <div class="step__node" aria-hidden="true">4</div>
+          </article>
+        </div>
+
+        <div class="build-actions reveal">
+          <a class="btn btn--primary" href="#build">Read the docs</a>
+          <a class="btn btn--paper" href="#build">Docs for your AI (.md) <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="creators">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <p class="kicker kicker--coral">The makers</p>
+            <h2>Built by people, not publishers.</h2>
+            <p class="lede">Students, designers, weekend tinkerers and full-time game nerds. Here are a few of the folks shipping on start.ng.</p>
+          </div>
+          <a class="btn btn--paper btn--sm" href="#creators">Meet the creators <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="creator-grid">
+          <article class="creator-card reveal">
+            <div class="creator-top">
+              <span class="creator-avatar creator-avatar--one">TA</span>
+              <span class="flag-token flag--ng" role="img" aria-label="Nigeria"></span>
+            </div>
+            <h3>Tunde Adeyemi</h3>
+            <p class="handle">@tunderuns · Lagos, NG</p>
+            <p class="creator-note">"Traffic, but make it arcade."</p>
+            <div class="creator-stats"><span><strong>6</strong> games</span><span><strong>41k</strong> plays</span></div>
+            <div class="tags"><span>Arcade</span><span>Three.js</span></div>
+          </article>
+
+          <article class="creator-card reveal">
+            <div class="creator-top">
+              <span class="creator-avatar creator-avatar--two">CO</span>
+              <span class="flag-token flag--ng" role="img" aria-label="Nigeria"></span>
+            </div>
+            <h3>Chiamaka Obi</h3>
+            <p class="handle">@jollofqueen · Enugu, NG</p>
+            <p class="creator-note">"Food games only. Obviously."</p>
+            <div class="creator-stats"><span><strong>4</strong> games</span><span><strong>28k</strong> plays</span></div>
+            <div class="tags"><span>Casual</span><span>Phaser</span></div>
+          </article>
+
+          <article class="creator-card reveal">
+            <div class="creator-top">
+              <span class="creator-avatar creator-avatar--three">KM</span>
+              <span class="flag-token flag--gh" role="img" aria-label="Ghana"></span>
+            </div>
+            <h3>Kwame Mensah</h3>
+            <p class="handle">@kwamebeats · Accra, GH</p>
+            <p class="creator-note">"If it has a beat, I'll build it."</p>
+            <div class="creator-stats"><span><strong>3</strong> games</span><span><strong>19k</strong> plays</span></div>
+            <div class="tags"><span>Music</span><span>Canvas</span></div>
+          </article>
+        </div>
+
+        <figure class="quote reveal">
+          <span class="quote__mark" aria-hidden="true">“</span>
+          <blockquote>
+            <p>I built Danfo Rush Hour in a weekend. By Monday it had 2,000 plays and a leaderboard full of strangers. That feeling? Unreal.</p>
+            <figcaption><strong>Tunde Adeyemi</strong> · creator of Danfo Rush Hour</figcaption>
+          </blockquote>
+          <div class="quote__sticker" aria-hidden="true">🏆<span>2,000</span><small>plays in 48h</small></div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-band reveal">
+          <div class="about-band__copy">
+            <p class="kicker kicker--green">Made in Naija</p>
+            <h2>From Lagos to the whole continent.</h2>
+            <p>start.ng is Nigeria's home for browser games, built by the HNG community. Every game is free to play in your browser, no download — and many are made right here: danfo rush hour, jollof catching, Lagos markets and more.</p>
+            <p>We're building a home for web games from across Africa too. If you make games anywhere on the continent, yours belongs here. Free.</p>
+            <a class="text-link" href="#about">More about start.ng <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about-band__side">
+            <div class="flag-cluster" aria-hidden="true">
+              <span class="flag-orb flag-orb--1 flag--ng" role="img" aria-label="Nigeria"></span>
+              <span class="flag-orb flag-orb--2 flag--gh" role="img" aria-label="Ghana"></span>
+              <span class="flag-orb flag-orb--3 flag--ke" role="img" aria-label="Kenya"></span>
+              <span class="flag-orb flag-orb--4 flag--za" role="img" aria-label="South Africa"></span>
+              <span class="flag-orb flag-orb--5 flag--eg" role="img" aria-label="Egypt"></span>
+            </div>
+            <div class="stat-grid">
+              <div class="stat"><strong>188</strong><span>games live</span></div>
+              <div class="stat"><strong>36</strong><span>cities</span></div>
+              <div class="stat"><strong>12</strong><span>countries</span></div>
+              <div class="stat"><strong>0</strong><span>downloads</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <p class="kicker kicker--sun">Good questions</p>
+          <h2>Ask us anything.</h2>
+          <p class="lede">The short version: it's free, it's instant, and your game belongs here.</p>
+          <div class="faq-mascot" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 4.5l5.6 13.2 14.2.9-10.9 9.2 3.5 13.8L24 33.5 11.6 41.6l3.5-13.8L4.2 18.6l14.2-.9z" fill="#FFC93C" stroke="#FFC93C" stroke-width="7" stroke-linejoin="round"/><circle cx="19.5" cy="21.5" r="2" fill="#123122"/><circle cx="29" cy="21.5" r="2" fill="#123122"/><path d="M20 27q4 3 8 0" fill="none" stroke="#123122" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span>Still curious? <a href="#build">Read the docs</a></span>
+          </div>
+        </div>
+
+        <div class="faq-list reveal">
+          <div class="faq-item is-open">
+            <button class="faq-q" type="button" aria-expanded="true" aria-controls="faq-1">
+              <span>What is start.ng?</span><span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" id="faq-1" role="region">
+              <div class="faq-a__inner"><p>A home for browser games made by the community — mostly Nigeria, increasingly all over Africa. Every game is free, instant, and lives at its own start.ng address.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-2">
+              <span>Is it free?</span><span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" id="faq-2" role="region">
+              <div class="faq-a__inner"><p>Completely. Playing is free, publishing is free, and there are no keys or gatekeepers. Bring a game, get a link.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-3">
+              <span>Are there Nigerian or African web games?</span><span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" id="faq-3" role="region">
+              <div class="faq-a__inner"><p>Plenty. Danfo Rush Hour, Jollof Catch, Lagos Market Tycoon, Ayo Classic and more — with new drops from creators across the continent every week.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-4">
+              <span>Do I need an account to play?</span><span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" id="faq-4" role="region">
+              <div class="faq-a__inner"><p>Nope. Pick a game and go. An account only unlocks leaderboards, streaks and saving your scores across games.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-5">
+              <span>What is the daily tournament?</span><span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" id="faq-5" role="region">
+              <div class="faq-a__inner"><p>One run, one shot, every day. The highest score before midnight WAT takes the crown. Free to enter, bragging rights included.</p></div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-6">
+              <span>How do I put my game on start.ng?</span><span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-a" id="faq-6" role="region">
+              <div class="faq-a__inner"><p>Build any static browser game, push it to a public GitHub repo with an <code>index.html</code> and a <code>cover.png</code>, then make one API call. Approve the link once and it's live at <strong>yourgame.start.ng</strong>.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <svg class="cta-spark cta-spark--1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          <svg class="cta-spark cta-spark--2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z" fill="currentColor"/></svg>
+          <p class="kicker kicker--dark">Your move</p>
+          <h2>Your game belongs here.</h2>
+          <p>Small idea? Weird idea? Half-finished idea? Perfect. Ship it this weekend and wake up to strangers on your leaderboard.</p>
+          <div class="cta-actions">
+            <a class="btn btn--paper" href="#games">Play a game</a>
+            <a class="btn btn--sun" href="#build">Publish yours <span aria-hidden="true">↗</span></a>
+          </div>
+          <p class="fine fine--light">Free forever · No keys · No gatekeeping</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand brand--footer" href="#top" aria-label="start.ng home">
+            <svg class="brand__star" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 4.5l5.6 13.2 14.2.9-10.9 9.2 3.5 13.8L24 33.5 11.6 41.6l3.5-13.8L4.2 18.6l14.2-.9z" fill="#C9F45B" stroke="#C9F45B" stroke-width="7" stroke-linejoin="round"/>
+              <circle cx="19.5" cy="21.5" r="1.9" fill="#123122"/>
+              <circle cx="29" cy="21.5" r="1.9" fill="#123122"/>
+              <path d="M20 26.5q4 3 8 0" fill="none" stroke="#123122" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+            <span class="brand__word">start<span>.ng</span></span>
+          </a>
+          <p>Nigeria's home for browser games, made by the community and by creators across Africa.</p>
+          <div class="socials">
+            <a href="#footer" aria-label="start.ng on X" data-toast="Socials are decorative in this concept — say hi on start.ng instead 💚">X</a>
+            <a href="#footer" aria-label="start.ng on Instagram" data-toast="Socials are decorative in this concept — say hi on start.ng instead 💚">IG</a>
+            <a href="#footer" aria-label="start.ng on Discord" data-toast="Socials are decorative in this concept — say hi on start.ng instead 💚">DC</a>
+            <a href="#footer" aria-label="start.ng on GitHub" data-toast="Socials are decorative in this concept — say hi on start.ng instead 💚">GH</a>
+          </div>
+        </div>
+
+        <nav class="footer-col" aria-label="Play">
+          <h3>Play</h3>
+          <a href="#games">All games</a>
+          <a href="#tournament">Daily tournament</a>
+          <a href="#tournament">Leaderboard</a>
+          <a href="#games">Categories</a>
+          <a href="#creators">The Hangout</a>
+        </nav>
+
+        <nav class="footer-col" aria-label="Make games">
+          <h3>Make games</h3>
+          <a href="#creators">Independent creators</a>
+          <a href="#build">Build a game</a>
+          <a href="#build">Docs for your AI (.md)</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <div class="footer-col footer-news">
+          <h3>The weekly game drop</h3>
+          <p>One email, every Friday. New games, creator spotlights, zero spam.</p>
+          <form class="newsletter" id="newsletter" novalidate>
+            <label class="sr-only" for="news-email">Email address</label>
+            <input id="news-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+            <button class="btn btn--sun btn--sm" type="submit">Count me in</button>
+          </form>
+          <p class="news-msg" id="news-msg" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 start.ng · Fan-made whimsical concept. Not affiliated with start.ng.</p>
+        <p>Made with <span aria-hidden="true">💚</span> in Lagos</p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="game-modal" id="game-modal" aria-labelledby="game-modal-title">
+    <div class="game-modal__head">
+      <div>
+        <p class="kicker kicker--lime">Playable demo</p>
+        <h2 id="game-modal-title">Jollof Catch</h2>
+      </div>
+      <button class="modal-close" id="modal-close" type="button" aria-label="Close game">✕</button>
+    </div>
+
+    <div class="game-stage" id="game-stage">
+      <div class="game-hud">
+        <span class="hud-pill"><span aria-hidden="true">⭐</span> <strong id="game-score">0</strong></span>
+        <span class="hud-pill hud-pill--time"><span aria-hidden="true">⏱️</span> <strong id="game-time">30</strong>s</span>
+        <span class="hud-pill hud-pill--best"><span aria-hidden="true">🏆</span> <strong id="game-best">0</strong></span>
+      </div>
+
+      <div class="game-sky" aria-hidden="true">
+        <span class="cloud cloud--1"></span>
+        <span class="cloud cloud--2"></span>
+        <span class="sun"></span>
+      </div>
+
+      <div class="game-items" id="game-items" aria-hidden="true"></div>
+
+      <div class="bowl" id="bowl" aria-hidden="true">
+        <span class="bowl__emoji">🥣</span>
+        <span class="bowl__shine"></span>
+      </div>
+
+      <div class="game-overlay" id="game-overlay">
+        <div class="overlay-card">
+          <span class="overlay-emoji" aria-hidden="true">🍚</span>
+          <h3 id="overlay-title">Catch the jollof!</h3>
+          <p id="overlay-text">Move the bowl with your mouse, finger, or arrow keys. Catch 🍚 +1 and 🍗 +3. Dodge the 🌶️ — they cost you 2 points.</p>
+          <button class="btn btn--primary" id="game-start" type="button">Start 30s run</button>
+          <p class="fine" id="overlay-fine">No downloads. No wahala.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-modal__foot">
+      <p><span aria-hidden="true">🖱️</span> Mouse &amp; touch friendly</p>
+      <p><span aria-hidden="true">⌨️</span> Arrow keys work too</p>
+      <p><span aria-hidden="true">💚</span> Concept demo of Jollof Catch</p>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

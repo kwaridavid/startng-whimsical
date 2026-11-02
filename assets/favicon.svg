@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="start.ng star">
+  <rect width="64" height="64" rx="16" fill="#fffdf6"/>
+  <path d="M32 8.5l6.9 16.1 17.4 1.1-13.3 11.2 4.3 16.9L32 44.2 16.7 53.8l4.3-16.9L7.7 25.7l17.4-1.1z" fill="#2bc25a" stroke="#2bc25a" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="26.5" cy="30" r="2.5" fill="#123122"/>
+  <circle cx="38" cy="30" r="2.5" fill="#123122"/>
+  <path d="M27 36q5 4 10.5 0" fill="none" stroke="#123122" stroke-width="2.8" stroke-linecap="round"/>
+</svg>
